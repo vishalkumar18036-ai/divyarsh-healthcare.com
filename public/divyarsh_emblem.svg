@@ -1,0 +1,192 @@
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Left Person Head Gradient (Azure to Royal Blue) -->
+    <linearGradient id="emblemHeadBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0093EE" />
+      <stop offset="100%" stop-color="#005AA6" />
+    </linearGradient>
+
+    <!-- Right Person Head Gradient (Bright Lime to Green) -->
+    <linearGradient id="emblemHeadGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#88D415" />
+      <stop offset="100%" stop-color="#55A405" />
+    </linearGradient>
+
+    <!-- Left Heart Body Gradient (Vibrant Sky Blue to Deep Cobalt) -->
+    <linearGradient id="emblemBodyBlue" x1="20%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#008FEA" />
+      <stop offset="45%" stop-color="#0060C4" />
+      <stop offset="100%" stop-color="#002574" />
+    </linearGradient>
+
+    <!-- Right Heart Body Gradient (Lime to Deep Emerald) -->
+    <linearGradient id="emblemBodyGreen" x1="80%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#84D016" />
+      <stop offset="45%" stop-color="#46A306" />
+      <stop offset="100%" stop-color="#006A20" />
+    </linearGradient>
+
+    <!-- Central Medical Cross Gradient -->
+    <linearGradient id="emblemCross" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00B2FF" />
+      <stop offset="50%" stop-color="#0082E6" />
+      <stop offset="100%" stop-color="#0052B4" />
+    </linearGradient>
+
+    <!-- Central Leaf Vertical Gradient -->
+    <linearGradient id="emblemLeafCenter" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3D9B04" />
+      <stop offset="60%" stop-color="#64BE0C" />
+      <stop offset="100%" stop-color="#84D416" />
+    </linearGradient>
+
+    <!-- Left Leaf Gradient -->
+    <linearGradient id="emblemLeafLeft" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3A9604" />
+      <stop offset="100%" stop-color="#7ECC14" />
+    </linearGradient>
+
+    <!-- Right Leaf Gradient -->
+    <linearGradient id="emblemLeafRight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3A9604" />
+      <stop offset="100%" stop-color="#7ECC14" />
+    </linearGradient>
+
+    <!-- Left Hand Blue Gradient -->
+    <linearGradient id="emblemHandLeft" x1="0%" y1="30%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#00A2F5" />
+      <stop offset="45%" stop-color="#0072CE" />
+      <stop offset="100%" stop-color="#003292" />
+    </linearGradient>
+
+    <!-- Right Hand Blue Gradient -->
+    <linearGradient id="emblemHandRight" x1="100%" y1="30%" x2="20%" y2="100%">
+      <stop offset="0%" stop-color="#00A2F5" />
+      <stop offset="45%" stop-color="#0072CE" />
+      <stop offset="100%" stop-color="#003292" />
+    </linearGradient>
+  </defs>
+
+  <!-- Left Person Head -->
+  <circle cx="140" cy="65" r="36" fill="url(#emblemHeadBlue)" />
+
+  <!-- Right Person Head -->
+  <circle cx="360" cy="65" r="36" fill="url(#emblemHeadGreen)" />
+
+  <!-- Left Heart Figure (Blue) -->
+  <path
+    d="M 250 154
+       C 224 126 182 98 128 100
+       C 70 102 46 148 56 214
+       C 68 288 152 352 222 342
+       C 190 326 138 296 112 254
+       C 84 210 92 166 128 144
+       C 162 124 212 134 250 154 Z"
+    fill="url(#emblemBodyBlue)"
+  />
+
+  <!-- Right Heart Figure (Green) -->
+  <path
+    d="M 250 154
+       C 276 126 318 98 372 100
+       C 430 102 454 148 444 214
+       C 432 288 348 352 278 342
+       C 310 326 362 296 388 254
+       C 416 210 408 166 372 144
+       C 338 124 288 134 250 154 Z"
+    fill="url(#emblemBodyGreen)"
+  />
+
+  <!-- Medical Cross (+) in Center -->
+  <g fill="url(#emblemCross)">
+    <!-- Vertical Bar -->
+    <rect x="226" y="168" width="48" height="120" rx="6" />
+    <!-- Horizontal Bar -->
+    <rect x="182" y="208" width="136" height="42" rx="6" />
+  </g>
+
+  <!-- Plant Stem (Green) -->
+  <path
+    d="M 248 485
+       C 248 440 248 385 249 375
+       L 251 375
+       C 252 385 252 440 252 485 Z"
+    fill="#006C22"
+  />
+
+  <!-- Left Leaf -->
+  <path
+    d="M 250 405
+       C 230 400 198 385 186 342
+       C 214 340 242 368 250 405 Z"
+    fill="url(#emblemLeafLeft)"
+  />
+  <path
+    d="M 250 405
+       C 225 385 210 365 186 342"
+    stroke="#8ED818"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Right Leaf -->
+  <path
+    d="M 250 405
+       C 270 400 302 385 314 342
+       C 286 340 258 368 250 405 Z"
+    fill="url(#emblemLeafRight)"
+  />
+  <path
+    d="M 250 405
+       C 275 385 290 365 314 342"
+    stroke="#8ED818"
+    stroke-width="1.8"
+    stroke-linecap="round"
+    fill="none"
+  />
+
+  <!-- Center Leaf -->
+  <path
+    d="M 250 380
+       C 232 355 232 320 250 294
+       C 268 320 268 355 250 380 Z"
+    fill="url(#emblemLeafCenter)"
+  />
+  <path
+    d="M 250 380 L 250 297"
+    stroke="#A0E824"
+    stroke-width="1.8"
+    stroke-linecap="round"
+  />
+
+  <!-- Left Blue Caring Hand -->
+  <path
+    d="M 238 485
+       C 200 455 160 415 125 352
+       C 105 315 90 280 62 274
+       C 60 286 70 310 82 334
+       C 70 302 62 284 40 274
+       C 40 286 48 308 60 334
+       C 35 285 25 264 18 248
+       C 16 260 22 286 36 322
+       C 52 365 82 414 126 448
+       C 168 478 206 484 238 485 Z"
+    fill="url(#emblemHandLeft)"
+  />
+
+  <!-- Right Blue Caring Hand (Symmetric) -->
+  <path
+    d="M 262 485
+       C 300 455 340 415 375 352
+       C 395 315 410 280 438 274
+       C 440 286 430 310 418 334
+       C 430 302 438 284 460 274
+       C 460 286 452 308 440 334
+       C 465 285 475 264 482 248
+       C 484 260 478 286 464 322
+       C 448 365 418 414 374 448
+       C 332 478 294 484 262 485 Z"
+    fill="url(#emblemHandRight)"
+  />
+</svg>

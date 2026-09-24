@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', 'Hind', sans-serif;
+}
+
+/* =========================================================
+   PDF EXPORT & PRINT STYLES (A4, Vector Crisp, High Density)
+   ========================================================= */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 10mm 12mm 10mm;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 12px !important;
+    line-height: 1.45 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide interactive browser elements, stickies, and mobile floating bars */
+  .no-print,
+  header,
+  #sticky-mobile-call-btn,
+  #sticky-mobile-wa-btn,
+  #sticky-mobile-form-btn,
+  .sticky,
+  button:not(.allow-print),
+  input[type="submit"],
+  .fixed {
+    display: none !important;
+  }
+
+  /* Unhide printable headers and footers */
+  .print\:block {
+    display: block !important;
+  }
+
+  .print\:flex {
+    display: flex !important;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Ensure cards and blocks don't split awkwardly across page breaks */
+  .print-break-avoid,
+  article,
+  .card,
+  [id^="surgery-card-"],
+  [id^="panel-card-"],
+  .rounded-2xl,
+  .rounded-xl,
+  .border,
+  table,
+  tr,
+  figure {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Flatten box shadows that create dark muddy printer borders */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Clean up section paddings for paper printing */
+  section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    break-inside: auto;
+  }
+
+  /* Keep anchor texts readable without ugly underline blobs */
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+
+  /* 2-Page Dedicated Brochure Mode */
+  body.print-brochure-mode main,
+  body.print-brochure-mode footer,
+  body.print-brochure-mode .print-default-view {
+    display: none !important;
+  }
+
+  body.print-brochure-mode #print-brochure-container {
+    display: block !important;
+  }
+
+  .print-brochure\:block {
+    display: none;
+  }
+
+  body.print-brochure-mode .print-brochure\:block {
+    display: block !important;
+  }
+
+  .print\:break-before-page {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+}
